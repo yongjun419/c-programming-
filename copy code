@@ -2,6 +2,9 @@ cd c:\
 cd C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\
 vcvars64.bat 
 vcvars64
+mkdir my_c_project
+cd my_c_project
+
 #include <stdio.h>
 int main(int argc, char *argv[]) {
     FILE *s, *t;
@@ -14,3 +17,11 @@ int main(int argc, char *argv[]) {
     fclose(t);
     return 0;
 }
+cl copy_file.c
+
+비주얼 스튜디오에서 코드없이 실행 후
+툴에서 명령줄에 개발자 명령 프롬프트 실행
+프로젝트를 저장할 파일을 만들고 이동한다
+코드 작성 및 저장 후 컴파일 한다.
+
+100점
